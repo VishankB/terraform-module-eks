@@ -14,5 +14,8 @@ variable "aws_region" {
   description = "aws region"
 }
 variable "state_locking_table_name" {
-  description = "dynamo DB table name for state file locking"
+  description = "Dynamo DB table name for state file locking"
+}
+variable "instance_type" {
+  description = "required instance_type"
 }
