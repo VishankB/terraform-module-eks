@@ -13,3 +13,6 @@ variable "public_subnet_cidr" {
 variable "aws_region" {
   description = "aws region"
 }
+variable "state_locking_table_name" {
+  description = "dynamo DB table name for state file locking"
+}
