@@ -19,3 +19,8 @@ variable "state_locking_table_name" {
 variable "instance_type" {
   description = "required instance_type"
 }
+variable "env_prefix" {
+  description = "provided environment input varible"
+}
+
+
