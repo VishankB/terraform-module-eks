@@ -41,7 +41,7 @@ resource "aws_eks_node_group" "private-nodes" {
 ## need to update as per update in subnet config.
 
   capacity_type  = "ON_DEMAND"
-  instance_types = ["t3.small"]    ### need to declare as variable.
+  instance_types = var.instance_type
 
   scaling_config {
     desired_size = 1
